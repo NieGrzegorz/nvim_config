@@ -1,6 +1,8 @@
 require('options')
 require('keymaps')
-require('plugins')
+require('config.lazy')
+
+require("lazy").setup("plugins")
 
 vim.o.background = "dark" 
 vim.cmd([[colorscheme gruvbox]])
